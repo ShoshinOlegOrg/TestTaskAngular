@@ -1,0 +1,74 @@
+body{
+	margin:0;
+	min-width: 720px;
+}
+
+#externalLayout {
+	min-width: 400px;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#mainLayout {
+	position: relative;
+	background-color: white;
+	border-radius:7px;
+	margin-left: 20px;
+	padding-top: 70px;
+	width: 90%;
+	top: -70px;
+	z-index : 9;
+}
+
+#canvas {
+	position: relative;
+	width: 70%;
+	height: 70px;
+	z-index : 10;
+}
+
+
+.row {
+	display: table;
+	width:100%;
+	margin-top:5px;
+}
+
+.row label {
+	float:left;
+	width: 25%;
+	height: 100%;
+	margin-left: 5px;
+}
+
+.row input, select {
+	border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 20px; /*высота строки ввода*/   
+	font-size: 13px; /*размер шрифта*/
+	background-position: 4px; /*Позиционируем*/	
+	background-repeat: no-repeat; /*Убираем повтор изображения*/   
+}
+
+.row input, textarea, select {
+	width: 65%;
+	margin-right:15px;
+}
+
+.row input#email {
+	background-image:url("/assets/images/email1.jpg");  
+}
+
+.row input#phone {
+	background-image:url("/assets/images/phone.png");
+}
+
+.row input#name {
+	background-image:url("/assets/images/people1.jpg");
+}
+
+#submitButton {
+	float:right;
+	margin-right: 15px;
+}
+
